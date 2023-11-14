@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { useState, useEffect } from 'react';
+import Axios from 'axios'
 function App() {
+  const api = "http://127.0.0.1:8000/";
+  const [users, setUsers] = useState([]);
+  
+  useEffect(()=>{
+    Axios.get(`${api}/users/role_user/6/`)
+    .then(res =>setUsers(res.data)
+    )
+},[]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       
     </div>
   );
 }
