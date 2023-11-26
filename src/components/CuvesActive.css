@@ -1,0 +1,23 @@
+
+.cuves-active {
+    padding: 1rem;
+    background-color: #e8f5e9; 
+  }
+  
+  .cuves-active h1 {
+    color: #2e7d32; 
+  }
+  
+  .cuves-active ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cuves-active li {
+    background-color: #ffffff;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

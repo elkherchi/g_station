@@ -1,0 +1,77 @@
+.admin-dashboard {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+  }
+  
+  .profile-logo {
+    background-image: url('./profile.jpg');
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-right: 1rem;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #555;
+  }
+  
+  .station-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .station-square {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+  }
+  
+  .station-square:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .station-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  
+  .station-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .station-square.active {
+    border-left: 4px solid #4caf50;
+  }
+  
+  .station-square.inactive {
+    border-left: 4px solid #f44336;
+  }
+  

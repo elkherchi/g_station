@@ -1,24 +1,32 @@
+import React from 'react';
+import Login from './components/login';
+import AdminDashboard from './components/admin_dashbord';
+import ResponsableDashboard from './components/responsable_dashbord';
+import CuvesActive from './components/CuvesActive'; // You need to create this component
+import CuvesInactive from './components/CuvesInactive'; // You need to create this component
+import PompesActive from './components/PompesActive'; // You need to create this component
+import PompesInactive from './components/PompesInactive'; // You need to create this component
+import Pompistes from './components/Pompistes'; 
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-import { useState, useEffect } from 'react';
-import Axios from 'axios'
-function App() {
-  const api = "http://127.0.0.1:8000/";
-  const [users, setUsers] = useState([]);
-  
-  useEffect(()=>{
-    Axios.get(`${api}/users/role_user/6/`)
-    .then(res =>setUsers(res.data)
-    )
-},[]);
 
+function App() {
   return (
-    <div className="App">
-      
-        <p>
-          Edit and save to reload.
-        </p>
-       
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin-dashbord" element={<AdminDashboard />} />
+          <Route path="/responsable-dashbord" element={<ResponsableDashboard />} />
+          <Route path="/cuves/active" element={<CuvesActive />} />
+          <Route path="/cuves/inactive" element={<CuvesInactive />} />
+          <Route path="/pompes/active" element={<PompesActive />} />
+          <Route path="/pompes/inactive" element={<PompesInactive />} />
+          <Route path="/pompistes" element={<Pompistes />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

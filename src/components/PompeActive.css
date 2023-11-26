@@ -1,0 +1,23 @@
+
+.pompes-active {
+    padding: 1rem;
+    background-color: #e3f2fd; 
+  }
+  
+  .pompes-active h1 {
+    color: #1e88e5; 
+  }
+  
+  .pompes-active ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pompes-active li {
+    background-color: #ffffff;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

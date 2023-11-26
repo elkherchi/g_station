@@ -1,0 +1,22 @@
+.pompistes {
+    padding: 1rem;
+    background-color: #fff3e0; 
+  }
+  
+  .pompistes h1 {
+    color: #fb8c00;
+  }
+  
+  .pompistes ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pompistes li {
+    background-color: #ffffff;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
